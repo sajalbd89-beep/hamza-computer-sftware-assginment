@@ -4,144 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamza Ali - Personal Portfolio & Trade App</title>
-    <!-- Tailwind CSS for clean and modern styling -->
+    <!-- Tailwind CSS for modern responsive utility classes -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for clean icons -->
+    <!-- FontAwesome for clean monochrome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #09090b; /* True Dark Black */
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="text-zinc-300 antialiased">
 
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-50 bg-white border-b border-slate-200">
+    <header class="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
         <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2">
-                <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center shadow-sm">
+                <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center shadow-sm shadow-emerald-900/50">
                     <i class="fa-solid fa-chart-line text-white text-sm"></i>
                 </div>
-                <span class="text-lg font-bold tracking-tight text-slate-950">Hamza Ali</span>
+                <span class="text-lg font-bold tracking-tight text-white">Hamza Ali</span>
             </a>
             
-            <ul class="flex space-x-6 text-sm font-medium text-slate-600">
-                <li><a href="#about" class="hover:text-emerald-600 transition-colors">Profile</a></li>
-                <li><a href="#calculator" class="hover:text-emerald-600 transition-colors">Trade Calculator</a></li>
-                <li><a href="#assignment" class="hover:text-emerald-600 transition-colors">Assignment Details</a></li>
+            <ul class="flex space-x-6 text-sm font-medium text-zinc-400">
+                <li><a href="#about" class="hover:text-emerald-400 transition-colors">Profile</a></li>
+                <li><a href="#calculator" class="hover:text-emerald-400 transition-colors">Calculator</a></li>
+                <li><a href="#assignment" class="hover:text-emerald-400 transition-colors">Assignment</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-20">
 
-        <!-- Hero Section -->
         <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div class="md:col-span-7 space-y-6">
-                <div class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                <div class="inline-block px-3 py-1 rounded-full bg-emerald-950/50 border border-emerald-800 text-emerald-400 text-xs font-semibold">
                     Konkuk University Student
                 </div>
-                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                    Hello, I'm <span class="text-emerald-600">Hamza Ali</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Hello, I'm <span class="text-emerald-500">Hamza Ali</span>
                 </h1>
-                <p class="text-lg text-slate-600 leading-relaxed">
+                <p class="text-lg text-zinc-400 leading-relaxed">
                     Specialize in International Business and Commerce. Passionate about researching global trade flows, market logistics, and cross-border commercial strategies.
                 </p>
                 
-                <!-- Contact info cards -->
+                <!-- Contact info card system -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div class="flex items-center space-x-3 p-3 bg-white border border-slate-200 rounded-xl">
-                        <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-600">
+                    <div class="flex items-center space-x-3 p-4 bg-zinc-900/60 border border-zinc-800 rounded-xl">
+                        <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-slate-400 font-medium">Email Address</p>
-                            <p class="text-sm font-semibold text-slate-700">alinwlnp@gmail.com</p>
+                            <p class="text-xs text-zinc-500 font-medium">Email Address</p>
+                            <p class="text-sm font-semibold text-zinc-300">alinwlnp@gmail.com</p>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-3 p-3 bg-white border border-slate-200 rounded-xl">
-                        <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-600">
+                    <div class="flex items-center space-x-3 p-4 bg-zinc-900/60 border border-zinc-800 rounded-xl">
+                        <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-slate-400 font-medium">Phone Number</p>
-                            <p class="text-sm font-semibold text-slate-700">01030132992</p>
+                            <p class="text-xs text-zinc-500 font-medium">Phone Number</p>
+                            <p class="text-sm font-semibold text-zinc-300">01030132992</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Profile Image Box -->
+            <!-- Profile Image Holder -->
             <div class="md:col-span-5 flex justify-center">
-                <div class="relative w-80 h-96 rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2">
-                    <img src="image_8abd02.png" alt="Hamza Ali" class="w-full h-full object-cover rounded-xl">
+                <div class="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 bg-zinc-900 p-2">
+                    <img src="image_8abd02.png" alt="Hamza Ali" class="w-full h-full object-cover rounded-xl opacity-90 hover:opacity-100 transition-opacity duration-300">
                 </div>
             </div>
         </section>
 
-        <!-- Trade Calculator Section -->
-        <section id="calculator" class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm space-y-8">
+        <section id="calculator" class="bg-zinc-900/40 border border-zinc-850 rounded-2xl p-8 shadow-xl space-y-8">
             <div class="text-center max-w-xl mx-auto space-y-2">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Trade Margin Calculator</h2>
-                <p class="text-sm text-slate-500">Calculate net profits and margins for imports easily.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-white">Trade Margin Calculator</h2>
+                <p class="text-sm text-zinc-500">Calculate net profits and margins for imports easily.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Inputs -->
+                <!-- Inputs Section -->
                 <div class="space-y-4">
-                    <h3 class="text-lg font-bold text-slate-800">Enter Details</h3>
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-sliders text-emerald-500"></i> Enter Details
+                    </h3>
                     
                     <div class="space-y-1">
-                        <label class="text-xs font-semibold text-slate-500 uppercase">Product Cost (USD)</label>
-                        <input type="number" id="cost" value="1000" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium" oninput="calculateTrade()">
+                        <label class="text-xs font-semibold text-zinc-500 uppercase">Product Cost (USD)</label>
+                        <input type="number" id="cost" value="1000" class="w-full p-3 bg-zinc-950 border border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium text-white" oninput="calculateTrade()">
                     </div>
 
                     <div class="space-y-1">
-                        <label class="text-xs font-semibold text-slate-500 uppercase">Shipping & Logistics (USD)</label>
-                        <input type="number" id="shipping" value="200" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium" oninput="calculateTrade()">
+                        <label class="text-xs font-semibold text-zinc-500 uppercase">Shipping & Logistics (USD)</label>
+                        <input type="number" id="shipping" value="200" class="w-full p-3 bg-zinc-950 border border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium text-white" oninput="calculateTrade()">
                     </div>
 
                     <div class="space-y-1">
-                        <label class="text-xs font-semibold text-slate-500 uppercase">Currency Unit</label>
-                        <select id="currency" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium" onchange="calculateTrade()">
+                        <label class="text-xs font-semibold text-zinc-500 uppercase">Currency Unit</label>
+                        <select id="currency" class="w-full p-3 bg-zinc-950 border border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium text-white" onchange="calculateTrade()">
                             <option value="KRW">South Korean Won (KRW ₩)</option>
                             <option value="BDT">Bangladeshi Taka (BDT ৳)</option>
                         </select>
                     </div>
 
                     <div class="space-y-1">
-                        <label class="text-xs font-semibold text-slate-500 uppercase">Target Selling Price (Local Currency)</label>
-                        <input type="number" id="sellingPrice" value="2500000" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium" oninput="calculateTrade()">
+                        <label class="text-xs font-semibold text-zinc-500 uppercase">Target Selling Price (Local Currency)</label>
+                        <input type="number" id="sellingPrice" value="2500000" class="w-full p-3 bg-zinc-950 border border-zinc-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-medium text-white" oninput="calculateTrade()">
                     </div>
                 </div>
 
-                <!-- Outputs -->
-                <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 flex flex-col justify-between">
-                    <h3 class="text-lg font-bold text-slate-800 mb-4">Calculation Output</h3>
+                <div class="bg-zinc-950/60 border border-zinc-800 rounded-xl p-6 flex flex-col justify-between">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-simple text-emerald-500"></i> Calculation Output
+                    </h3>
 
                     <div class="space-y-4 flex-1">
-                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
-                            <span class="text-sm text-slate-500 font-medium">Total Cost (USD)</span>
-                            <span id="out_cost_usd" class="font-bold text-slate-800">$1,200.00</span>
+                        <div class="flex justify-between items-center py-2 border-b border-zinc-800">
+                            <span class="text-sm text-zinc-500 font-medium">Total Cost (USD)</span>
+                            <span id="out_cost_usd" class="font-bold text-zinc-300">$1,200.00</span>
                         </div>
-                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
-                            <span class="text-sm text-slate-500 font-medium">Total Cost (Local)</span>
-                            <span id="out_cost_local" class="font-bold text-slate-800">₩1,620,000</span>
+                        <div class="flex justify-between items-center py-2 border-b border-zinc-800">
+                            <span class="text-sm text-zinc-500 font-medium">Total Cost (Local)</span>
+                            <span id="out_cost_local" class="font-bold text-zinc-300">₩1,620,000</span>
                         </div>
-                        <div class="flex justify-between items-center py-2 border-b border-slate-200">
-                            <span class="text-sm text-slate-500 font-medium">Net Profit (Local)</span>
-                            <span id="out_profit" class="font-bold text-emerald-600 text-lg">₩880,000</span>
+                        <div class="flex justify-between items-center py-2 border-b border-zinc-800">
+                            <span class="text-sm text-zinc-500 font-medium">Net Profit (Local)</span>
+                            <span id="out_profit" class="font-bold text-emerald-400 text-lg">₩880,000</span>
                         </div>
                     </div>
 
-                    <!-- Margin display badge -->
-                    <div class="mt-6 p-4 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-between">
+                    <!-- Margin status badge -->
+                    <div class="mt-6 p-4 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-between">
                         <div>
-                            <p class="text-xs text-emerald-600 font-semibold uppercase">Net Profit Margin</p>
-                            <p id="out_margin" class="text-2xl font-black text-emerald-800">35.2%</p>
+                            <p class="text-xs text-zinc-500 font-semibold uppercase">Net Profit Margin</p>
+                            <p id="out_margin" class="text-2xl font-black text-emerald-400">35.2%</p>
                         </div>
-                        <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 text-lg">
+                        <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-lg">
                             <i class="fa-solid fa-percent"></i>
                         </div>
                     </div>
@@ -149,52 +150,50 @@
             </div>
         </section>
 
-        <!-- Course Assignment Credentials -->
         <section id="assignment" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <h3 class="text-3xl font-extrabold tracking-tight text-slate-900">Assignment Requirements</h3>
-                <p class="text-slate-600 leading-relaxed">
+                <h3 class="text-3xl font-extrabold tracking-tight text-white">Assignment Requirements</h3>
+                <p class="text-zinc-400 leading-relaxed">
                     Designed as part of the <strong>Introduction to Computer Engineering</strong> course at Konkuk University. The goal is to build an interactive application using AI tools, host it on GitHub Pages, and provide a self-introduction/resume profile on the same page.
                 </p>
                 <div class="space-y-3">
-                    <div class="flex items-center space-x-3 text-sm text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
                         <span>AI tool generated dynamic page structure.</span>
                     </div>
-                    <div class="flex items-center space-x-3 text-sm text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
                         <span>Clean, single HTML file suitable for instant GitHub deployment.</span>
                     </div>
-                    <div class="flex items-center space-x-3 text-sm text-slate-700">
-                        <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                    <div class="flex items-center space-x-3 text-sm text-zinc-300">
+                        <i class="fa-solid fa-circle-check text-emerald-500"></i>
                         <span>Self-Introduction information integrated beautifully.</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Assignment Specification Image -->
-            <div class="border border-slate-200 bg-white p-3 rounded-2xl shadow-sm">
-                <img src="image_8abc84.png" alt="Assignment Specification Diagram" class="w-full h-auto rounded-xl">
-                <p class="text-xs text-slate-400 text-center mt-2 font-medium">Syllabus Guidelines Reference Image</p>
+            <!-- Assignment reference image layout -->
+            <div class="border border-zinc-800 bg-zinc-900/40 p-3 rounded-2xl shadow-lg">
+                <img src="image_8abc84.png" alt="Assignment Specification Diagram" class="w-full h-auto rounded-xl opacity-85 hover:opacity-100 transition-opacity duration-350">
+                <p class="text-xs text-zinc-500 text-center mt-2 font-medium">Syllabus Guidelines Reference Image</p>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-400 font-medium">
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-8 text-center text-xs text-zinc-500 font-medium">
         <p>&copy; 2026 Hamza Ali. Developed for Konkuk University Academic Submission.</p>
     </footer>
 
     <script>
-        // Exchange rates representing fixed scenarios
+        // Exchange rates representing scenarios
         const RATES = {
             KRW: { rate: 1350, symbol: '₩' },
             BDT: { rate: 118, symbol: '৳' }
         };
 
         function calculateTrade() {
-            // Get values
+            // Get values from input boxes
             const cost = parseFloat(document.getElementById('cost').value) || 0;
             const shipping = parseFloat(document.getElementById('shipping').value) || 0;
             const currency = document.getElementById('currency').value;
@@ -202,35 +201,35 @@
 
             const rateInfo = RATES[currency];
 
-            // Perform Calculations
+            // Calculations
             const totalUSD = cost + shipping;
             const totalLocal = totalUSD * rateInfo.rate;
             const profit = sellingPrice - totalLocal;
             
-            // Calculate Margin percentage
+            // Percentage Trade Margin calculation
             let margin = 0;
             if (sellingPrice > 0) {
                 margin = (profit / sellingPrice) * 100;
             }
 
-            // Write Outputs to UI
+            // Bind values back to the UI
             document.getElementById('out_cost_usd').innerText = '$' + totalUSD.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
             document.getElementById('out_cost_local').innerText = rateInfo.symbol + Math.round(totalLocal).toLocaleString();
             
             const profitEl = document.getElementById('out_profit');
             profitEl.innerText = rateInfo.symbol + Math.round(profit).toLocaleString();
             
-            // Toggle text colors based on profitability
+            // Adjust label coloring based on positive or negative profit margins
             if (profit >= 0) {
-                profitEl.className = "font-bold text-emerald-600 text-lg";
+                profitEl.className = "font-bold text-emerald-400 text-lg";
             } else {
-                profitEl.className = "font-bold text-red-600 text-lg";
+                profitEl.className = "font-bold text-red-400 text-lg";
             }
 
             document.getElementById('out_margin').innerText = margin.toFixed(1) + '%';
         }
 
-        // Run calculations once on startup
+        // Initialize calculator with template values on window load
         window.addEventListener('DOMContentLoaded', () => {
             calculateTrade();
         });
